@@ -1,0 +1,23 @@
+meta {
+  name: PatchToDoList
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:5252/api/ToDo/23f53ea9-9bce-4d46-82ec-d41f6b7f41b7
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "Title" : "Title Users",
+    "IsCompleted" : true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

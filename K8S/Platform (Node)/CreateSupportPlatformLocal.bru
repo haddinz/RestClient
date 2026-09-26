@@ -1,0 +1,24 @@
+meta {
+  name: CreateSupportPlatformLocal
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5017/api/platforms
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Fedora XFCE",
+    "publisher": "Open Source Linux",
+    "cost": "Free"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

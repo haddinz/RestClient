@@ -1,0 +1,16 @@
+meta {
+  name: GetAllCommandForPlatform
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:5277/api/c/platform/ba558b96-ed73-4c88-aa07-0349c87f11e0/commands
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

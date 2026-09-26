@@ -1,0 +1,23 @@
+meta {
+  name: CreateComandForPlatform
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5277/api/c/platform/ba558b96-ed73-4c88-aa07-0349c87f11e0/commands
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "HowTo" : "Build .NET Project",
+    "CommandLine" : ".NET Build and Run"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: verify email
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5152/api/a/auth/verify-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "Token": "67C6A80067512AB05FF8EF5A310334EA4EA0A9DE22F01DE5123C779689C8DC23"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

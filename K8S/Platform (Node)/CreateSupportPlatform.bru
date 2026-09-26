@@ -1,0 +1,24 @@
+meta {
+  name: CreateSupportPlatform
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:31667/api/platforms
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Fedora",
+    "publisher": "Red Hat Enterprice Linux",
+    "cost": "Free"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

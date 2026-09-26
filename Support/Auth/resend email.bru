@@ -1,0 +1,22 @@
+meta {
+  name: resend email
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:5152/api/a/auth/verify-email/resend
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "devtools@support.id"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

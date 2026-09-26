@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "K8S",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,26 @@
+meta {
+  name: logout
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5152/api/auth/logout
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTllOGZmNy01OGZiLTcwNGMtYmVjOC1lZTBlNWE0NDBjNTkiLCJlbWFpbCI6ImpvaG5kb2VAc3VwcG9ydC5pZCIsInVuaXF1ZV9uYW1lIjoiam9obiIsImp0aSI6ImRhZTg4NjM5LTBlNGItNGRlNy1hYjJmLWNiODg5ZWFjMjQ3NSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJleHAiOjE3ODA3NDg3NDgsImlzcyI6IkF1dGhBcGkiLCJhdWQiOiJBdXRoQXBpQ2xpZW50In0.jXDxBHW9nbvglFwt4UeiF6IjMh1sRIhQqhlqcnYO5wA
+}
+
+body:json {
+  {
+    "refreshtoken": "37NyidAEUd1H8ZMEpnreHw/xoe7kbhl1cO+thLW1ueCeQDa36srbDSOETWjLdc9X8SaVEvA0XkvWSvw+kgRkWw=="
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

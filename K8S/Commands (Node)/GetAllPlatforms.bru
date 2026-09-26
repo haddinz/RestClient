@@ -1,0 +1,16 @@
+meta {
+  name: GetAllPlatforms
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:5277/api/c/platform
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

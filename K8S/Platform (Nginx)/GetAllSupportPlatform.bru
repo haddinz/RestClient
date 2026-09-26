@@ -1,0 +1,16 @@
+meta {
+  name: GetAllSupportPlatform
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://acme.com:30419/api/platforms
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

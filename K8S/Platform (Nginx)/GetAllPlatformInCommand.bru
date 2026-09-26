@@ -1,0 +1,16 @@
+meta {
+  name: GetAllPlatformInCommand
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://acme.com:30419/api/c/platform
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
